@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylsheet" href="css/helper.css">
-    <link rel="stylsheet" href="css/reset.css">
-    <link rel="stylsheet" href="css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/helper.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ubiquity</title>
 </head>
 
 
@@ -16,17 +18,41 @@
     <header class="site-header">
         <div class="container">
             <div class="logo-group">
-                <img src="" alt="" class="logo-img">
-                <p class="logo-title">Ubiquity</p>
-                <p class="logo-subtitle">Professional Web UI</p>
+                <figure class="logo-box">
+                    <img src="img/LOGO.svg" alt="Logo Ubiquity" class="logo-img ir">
+                </figure>
+                <div class="logo-texts">
+                    <p class="logo-text logo-title">Ubiquity</p>
+                    <p class="logo-text logo-subtitle">Professional Web UI</p>
+                </div>
             </div>
             <nav class="menu">
-                <ul class="menu-items">
-                    <li class="menu-links"></li>
-                    <li class="menu-links"></li>
-                    <li class="menu-links"></li>
-                    <li class="menu-links"></li>
-                    <li class="menu-links"></li>
+                <ul class="menu-items" role="list">
+                    <li class="menu-links">
+                        <a href="" class="link" id="link">
+                            home
+                        </a>
+                    </li>
+                    <li class="menu-links">
+                        <a href="" class="link">
+                            about
+                        </a>
+                    </li>
+                    <li class="menu-links">
+                        <a href="" class="link">
+                            portfolio
+                        </a>
+                    </li>
+                    <li class="menu-links">
+                        <a href="" class="link">
+                            blog
+                        </a>
+                    </li>
+                    <li class="menu-links">
+                        <a href="" class="link">
+                            contact
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -35,29 +61,31 @@
 
     <section class="site-hero">
         <div class="container">
-            <h1 class="site-title">
-                At Ubiquity , We care
-            </h1>
-            <div class="passing-buttons">
-                <button class="button-left">
-                    <img src="" alt="" class="left">
+            <div class="hero-reader">
+                <button class="button-left-right">
+                    <img src="img/arrow-circle-left.svg" alt="left" class="button-left">
                 </button>
-                <button class="button-right">
-                    <img src="" alt="" class="right">
-                </button>
-                <p class="hero-text">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.
-                </p>
-                <div class="eight-buttons">
-                    <button class="carousel"></button>
-                    <button class="carousel"></button>
-                    <button class="carousel"></button>
-                    <button class="carousel"></button>
-                    <button class="carousel"></button>
-                    <button class="carousel"></button>
-                    <button class="carousel"></button>
-                    <button class="carousel"></button>
+                <div class="content-box">
+                    <h1 class="site-title">
+                        At Ubiquity , We care
+                    </h1>
+                    <p class="section-text hero-text">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.
+                    </p>
                 </div>
+                <button class="button-left-right">
+                    <img src="img/arrow-circle-left-1.svg" alt="right" class="button-right">
+                </button>
+            </div>
+            <div class="eight-buttons">
+                <button class="square"></button>
+                <button class="square"></button>
+                <button class="square"></button>
+                <button class="square"></button>
+                <button class="square"></button>
+                <button class="square"></button>
+                <button class="square"></button>
+                <button class="square"></button>
             </div>
         </div>
     </section>
@@ -69,16 +97,18 @@
                 <h2 class="section-title">
                     Our Services
                 </h2>
-                <div class="two-buttons">
-                    <button class="carousel"></button>
-                    <button class="carousel"></button>
+                <div class="edging">
+                    <button class="square square-orange"></button>
+                    <button class="square"></button>
                 </div>
                 <P class="section-text">
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
                 </P>
                 <div class="services-items">
                     <div class="service-item">
-                        <img src="" alt="" class="item-image">
+                        <fig class="icone-box">
+                            <img src="img/briefcase.svg" alt="" class="item-image">
+                        </fig>
                         <h3 class="item-title">
                             Consultation
                         </h3>
@@ -87,7 +117,9 @@
                         </p>
                     </div>
                     <div class="service-item">
-                        <img src="" alt="" class="item-image">
+                        <figure class="icone-box">
+                            <img src="img/notes.svg" alt="" class="item-image">
+                        </figure>
                         <h3 class="item-title">
                             Blogging
                         </h3>
@@ -96,7 +128,9 @@
                         </p>
                     </div>
                     <div class="service-item">
-                        <img src="" alt="" class="item-image">
+                        <figure class="icone-box">
+                            <img src="img/star.svg" alt="" class="item-image">
+                        </figure>
                         <h3 class="item-title">
                             Social Media
                         </h3>
@@ -105,7 +139,9 @@
                         </p>
                     </div>
                     <div class="service-item">
-                        <img src="" alt="" class="item-image">
+                        <figure class="icone-box">
+                            <img src="img/bolt.svg" alt="" class="item-image">
+                        </figure>
                         <h3 class="item-title">
                             SEO
                         </h3>
@@ -119,16 +155,19 @@
             
         <section class="fonctionalities">
             <div class="container">
-                <h2 class="section-title">
+                <h2 class="section-title section-title-orange">
                     What is Ubiquity
                 </h2>
-                <div class="two-buttons">
-                    <button class="carousel"></button>
-                    <button class="carousel"></button>
+                <div class="edging">
+                    <button class="square square-orange"></button>
+                    <button class="square square-grey"></button>
                 </div>
                 <p class="section-text">
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
                 </p>
+                <fig class="carousel-box">
+                    <!-- <img src="img/Groupe 33.png" srcset="img/Groupe 33@2x.png" alt="" class="slider"> -->
+                </fig>
             </div>
         </section>
 
@@ -137,155 +176,178 @@
                 <h2 class="section-title">
                     Latest Posts
                 </h2>
-                <div class="two-buttons">
-                    <button class="carousel"></button>
-                    <button class="carousel"></button>
+                <div class="edging">
+                    <button class="square square-orange"></button>
+                    <button class="square"></button>
                 </div>
                 <p class="section-text">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
                 </p>
-                <div class="posts-items">
-                    <article class="post-item">
-                        <img src="" alt="" class="item-image">
-                        <h3 class="item-title">
-                            Blog Title
-                        </h3>
-                        <p class="item-text">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                        </p>
-                    </article>
-                    <article class="post-item">
-                        <img src="" alt="" class="item-image">
-                        <h3 class="item-title">
-                            Title of the Blog
-                        </h3>
-                        <p class="item-text">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                        </p>
-                    </article>
-                    <article class="post-item">
-                        <img src="" alt="" class="item-image">
-                        <h3 class="item-title">
-                            Title of the Blog
-                        </h3>
-                        <p class="item-text">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                        </p>
-                    </article>
-                    <article class="post-item">
-                        <img src="" alt="" class="item-image">
-                        <h3 class="item-title">
-                            Blog Title
-                        </h3>
-                        <p class="item-text">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                        </p>
-                    </article>
-                    <article class="post-item">
-                        <img src="" alt="" class="item-image">
-                        <h3 class="item-title">
-                            Blog Title
-                        </h3>
-                        <p class="item-text">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                        </p>
-                    </article>
-                    <article class="post-item">
-                        <img src="" alt="" class="item-image">
-                        <h3 class="item-title">
-                            Blog Title
-                        </h3>
-                        <p class="item-text">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                        </p>
-                    </article>
-                </div>
+                <ul class="cards-list" role="list">
+                    <li class="cards">
+                        <a href="#" class="card-link">
+                            <article class="card-item">
+                                <figure class="image-box">
+                                    <img src="img/annie-spratt-wgivdx9dBdQ-unsplash-1.png" srcset="img/annie-spratt-wgivdx9dBdQ-unsplash-1@2x.png" alt="Photo d'un espace de coworking" class="item-image">
+                                </figure>
+                                <h3 class="item-title">
+                                    Blog Title
+                                </h3>
+                                <p class="item-text">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                                </p>
+                            </article>
+                        </a>
+                    </li>
+                    <li class="cards">
+                        <a href="#" class="card-link">
+                            <article class="card-item">
+                                <figure class="image-box">
+                                    <img src="img/william-iven-SpVHcbuKi6E-unsplash.png" srcset="img/william-iven-SpVHcbuKi6E-unsplash@2x.png" alt="Photo d'une main tenant un portable" class="item-image">
+                                </figure>
+                                <h3 class="item-title">
+                                    Title of the Blog
+                                </h3>
+                                <p class="item-text">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                                </p>
+                            </article>
+                        </a>
+                    </li>
+                    <li class="cards">
+                        <a href="#" class="card-link">
+                            <article class="card-item">
+                                <figure class="image-box">
+                                    <img src="img/green-chameleon-s9CC2SKySJM-unsplash.png" srcset="img/green-chameleon-s9CC2SKySJM-unsplash@2x.png" alt="Photo d'un emain tenant un stylo" class="item-image">
+                                </figure>
+                                <h3 class="item-title">
+                                    Title of the Blog
+                                </h3>
+                                <p class="item-text">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                                </p>
+                            </article>
+                        </a>
+                    </li>
+                    <li class="cards">
+                        <a href="#" class="card-link">
+                            <article class="card-item">
+                                <figure class="image-box">
+                                    <img src="img/helloquence-5fNmWej4tAA-unsplash.png" srcset="img/helloquence-5fNmWej4tAA-unsplash@2x.png" alt="Photo des mains de deux hommes prenant des notes" class="item-image">
+                                </figure>
+                                <h3 class="item-title">
+                                    Blog Title
+                                </h3>
+                                <p class="item-text">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                                </p>
+                            </article>
+                        </a>
+                    </li>
+                    <li class="cards">
+                        <a href="#" class="card-link">
+                            <article class="card-item">
+                                <figure class="image-box">
+                                    <img src="img/lauren-mancke-aOC7TSLb1o8-unsplash-1.png" srcset="img/lauren-mancke-aOC7TSLb1o8-unsplash-1@2x.png" alt="photo d'un ordinateur portable vu de dessus" class="item-image">
+                                </figure>
+                                <h3 class="item-title">
+                                    Blog Title
+                                </h3>
+                                <p class="item-text">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                                </p>
+                            </article>
+                        </a>
+                    </li>
+                    <li class="cards">
+                        <a href="#" class="card-link">
+                            <article class="card-item">
+                                <figure class="image-box">
+                                    <img src="img/annie-spratt-wgivdx9dBdQ-unsplash-1.png" srcset="img/annie-spratt-wgivdx9dBdQ-unsplash-1@2x.png" alt="Photo d'un espace de coworking" class="item-image">
+                                </figure>
+                                <h3 class="item-title">
+                                    Blog Title
+                                </h3>
+                                <p class="item-text">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                                </p>
+                            </article>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </section>
 
         <section class="statistics">
+            <div class="overlay"></div>
             <div class="container">
                 <h2 class="section-title">
                     Fun Facts
                 </h2>
-                <div class="two-buttons">
-                    <button class="carousel"></button>
-                    <button class="carousel"></button>
+                <div class="edging">
+                    <button class="square square-orange"></button>
+                    <button class="square"></button>
                 </div>
-                <div class="stats-items">
-                    <div class="stat-item">
-                        <p class="stat-number">
-                            5
+                <ul class="stats-items" role="list">
+                    <li class="stat-item">
+                        <p class="stat-box">
+                            <span class="stat-number">5</span> <span class="stat-type">people</span>
                         </p>
-                        <p class="stat-type">
-                            people
+                    </li>
+                    <li class="stat-item">
+                        <p class="stat-box">
+                            <span class="stat-number">243</span> <span class="stat-type">pageviews</span>
                         </p>
-                    </div>
-                    <div class="stat-item">
-                        <p class="stat-number">
-                            243
+                    </li>
+                    <li class="stat-item">
+                        <p class="stat-box">
+                            <span class="stat-number">23</span> <span class="stat-type">coffees</span>
                         </p>
-                        <p class="stat-type">
-                            pageviews
+                    </li>
+                    <li class="stat-item">
+                        <p class="stat-box">
+                            <span class="stat-number">600</span> <span class="stat-type">hours</span>
                         </p>
-                    </div>
-                    <div class="stat-item">
-                        <p class="stat-number">
-                            23
+                    </li>
+                    <li class="stat-item">
+                        <p class="stat-box">
+                            <span class="stat-number">40</span> <span class="stat-type">days</span>
                         </p>
-                        <p class="stat-type">
-                            coffees
+                    </li>
+                    <li class="stat-item">
+                        <p class="stat-box">
+                            <span class="stat-number">17</span> <span class="stat-type">websites</span>
                         </p>
-                    </div>
-                    <div class="stat-item">
-                        <p class="stat-number">
-                            600
-                        </p>
-                        <p class="stat-type">
-                            hours
-                        </p>
-                    </div>
-                    <div class="stat-item">
-                        <p class="stat-number">
-                            40
-                        </p>
-                        <p class="stat-type">
-                            days
-                        </p>
-                    </div>
-                    <div class="stat-item">
-                        <p class="stat-number">
-                            17
-                        </p>
-                        <p class="stat-type">
-                            websites
-                        </p>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </section>
 
         <section class="testimonies">
             <div class="container">
-                <img src="" alt="" class="testimony-img">
                 <article class="testimony-item">
-                    <h2 class="section-title">
-                        Amanda Sigfried
-                    </h2>
-                    <p class="section-text">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren
-                    </p>
+                    <fig class="portrait-box">
+                        <img src="img/Image 1.png" srcset="mg/Image 1@2x.png" alt="Photo d'une femme travaillant sur un ordinateur portable" class="testimony-img">
+                    </fig>
+                    <div class="testimony-content">
+                        <h2 class="section-title">
+                            Amanda Sigfried
+                        </h2>
+                        <p class="section-text">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren
+                        </p>
+                    </div>
                 </article>
 
                 <div class="eight-buttons">
-                    <button class="carousel"></button>
-                    <button class="carousel"></button>
-                    <button class="carousel"></button>
-                    <button class="carousel"></button>
-                    <button class="carousel"></button>
-                    <button class="carousel"></button>
-                    <button class="carousel"></button>
-                    <button class="carousel"></button>
+                    <button class="square"></button>
+                    <button class="square"></button>
+                    <button class="square"></button>
+                    <button class="square"></button>
+                    <button class="square"></button>
+                    <button class="square"></button>
+                    <button class="square"></button>
+                    <button class="square"></button>
                 </div>
             </div>
         </section>
@@ -293,119 +355,152 @@
 
     <footer class="site-footer">
         <div class="container">
-            <nav class="footer-menu">
-                <h3 class="menu-title">
-                    Recent Posts
-                </h3>
-                <ul class="menu-items">
-                    <li class="menu-item">
-                        <a href="" class="link"><img src="" alt="" class="symbole">orem ipsum dolor</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="" class="link"><img src="" alt="" class="symbole">sit amet, consetetur</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="" class="link"><img src="" alt="" class="symbole">sadipscing elitr, sed</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="" class="link"><img src="" alt="" class="symbole">diam monumy</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="" class="link"><img src="" alt="" class="symbole">ermod tempor.</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <nav class="footer-menu">
-                <h3 class="menu-title">
-                    Recent comments
-                </h3>
-                <ul class="menu-items">
-                    <li class="menu-item">
-                        <a href="" class="link"><img src="" alt="" class="symbole">orem ipsum dolor</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="" class="link"><img src="" alt="" class="symbole">sit amet, consetetur</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="" class="link"><img src="" alt="" class="symbole">sadipscing elitr, sed</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="" class="link"><img src="" alt="" class="symbole">diam monumy</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="" class="link"><img src="" alt="" class="symbole">ermod tempor.</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <nav class="menu-footer">
-                <h3 class="menu-title">
-                    tags
-                </h3>
-                <li class="tag">
-                    inside
-                </li>
-                <li class="tag">
-                    check
-                </li>
-                <li class="tag">
-                    demo
-                </li>
-                <li class="tag">
-                    office
-                </li>
-                <li class="tag">
-                    work
-                </li>
-                <li class="tag">
-                    post
-                </li>
-                <li class="tag">
-                    management
-                </li>
-            </nav>
-
-            <adress class="contacts">
-                <h3 class="menu-title">
-                    ubiquity
-                </h3>
-                <ul class="list-contacts">
-                    <li class="contact-item">
-                        <img src="" alt="" class="contact-icone">
-                        <p class="contact-text">
-                            2499 Bee Street, Bear Lake Michigan 49614
-                        </p>
-                    </li>
-                    <li class="contact-item">
-                        <img src="" alt="" class="contact-icone">
-                        <p class="contact-text">
-                            231 - 864 - 8100
-                        </p>
-                    </li>
-                    <li class="contact-item">
-                        <img src="" alt="" class="contact-icone">
-                        <p class="contact-text">
-                            Hello@domainname.com
-                        </p>
-                    </li>
-                </ul>
-                <hr>
+            <div class="menu">
+                <nav class="menu-box">
+                    <h3 class="footer-title">
+                        Recent Posts
+                    </h3>
+                    <ul class="menu-list" role="list">
+                        <li class="menu-item">
+                            <a href="" class="link"><img src="img/angle-double-right.svg" alt="Double chevrons vers la droite" class="symbole">orem ipsum dolor</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="" class="link"><img src="img/angle-double-right.svg" alt="Double chevrons vers la droite" class="symbole">sit amet, consetetur</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="" class="link"><img src="img/angle-double-right.svg" alt="Double chevrons vers la droite" class="symbole">sadipscing elitr, sed</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="" class="link"><img src="img/angle-double-right.svg" alt="Double chevrons vers la droite" class="symbole">diam monumy</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="" class="link"><img src="img/angle-double-right.svg" alt="Double chevrons vers la droite" class="symbole">ermod tempor.</a>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <nav class="menu-box">
+                    <h3 class="footer-title">
+                        Recent comments
+                    </h3>
+                    <ul class="menu-list" role="list">
+                        <li class="menu-item">
+                            <a href="" class="link"><img src="img/angle-double-right.svg" alt="Double chevrons vers la droite" class="symbole">orem ipsum dolor</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="" class="link"><img src="img/angle-double-right.svg" alt="Double chevrons vers la droite" class="symbole">sit amet, consetetur</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="" class="link"><img src="img/angle-double-right.svg" alt="Double chevrons vers la droite" class="symbole">sadipscing elitr, sed</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="" class="link"><img src="img/angle-double-right.svg" alt="Double chevrons vers la droite" class="symbole">diam monumy</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="" class="link"><img src="img/angle-double-right.svg" alt="Double chevrons vers la droite" class="symbole">ermod tempor.</a>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <nav class="menu-box">
+                    <h3 class="footer-title">
+                        tags
+                    </h3>
+                    <ul class="tags-list" role="list">
+                        <li class="tag">
+                            <a href="#" class="link">
+                                inside
+                            </a>
+                        </li>
+                        <li class="tag">
+                            <a href="#" class="link">
+                                check
+                            </a>
+                        </li>
+                        <li class="tag">
+                            <a href="#" class="link">
+                                demo
+                            </a>
+                        </li>
+                        <li class="tag">
+                            <a href="#" class="link">
+                                office
+                            </a>
+                        </li>
+                        <li class="tag">
+                            <a href="#" class="link">
+                                office
+                            </a>
+                        </li>
+                        <li class="tag">
+                            <a href="#" class="link">
+                                post
+                            </a>
+                        </li>
+                        <li class="tag">
+                            <a href="#" class="link">
+                                management
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <adress class="menu-box">
+                    <h3 class="footer-title">
+                        ubiquity
+                    </h3>
+                    <ul class="list-contacts" role="list">
+                        <li class="contact-item">
+                            <img src="img/map-marker.svg" alt="icone d'un point de localisation" class="symbole">
+                            <a href="#" class="link">
+                                <p class="contact-text">
+                                    2499 Bee Street, Bear Lake Michigan 49614
+                                </p>
+                            </a>
+                        </li>
+                        <li class="contact-item">
+                            <img src="img/phone.svg" alt="Icone d'un téléphone" class="symbole">
+                            <a href="#" class="link">
+                                <p class="contact-text">
+                                    231 - 864 - 8100
+                                </p>
+                            </a>
+                        </li>
+                        <li class="contact-item">
+                            <img src="img/envelope.svg" alt="Icone d'une enveloppe" class="symbole">
+                            <a href="#" class="link">
+                                <p class="contact-text">
+                                    Hello@domainname.com
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </adress>
+            </div>
+            <hr>
+            <div class="footer-footer">
                 <p class="legal-mentions">© 2019 Ubiquity . All Rights Reserved.</p>
-                <ul class="social-networks">
+                <ul class="social-networks" role="list">
                     <li class="sn-item">
-                        <a href="" class="sn-link">img.sn-icone</a>
+                        <a href="" class="sn-link">
+                            <img src="img/icons8-facebook.svg" alt="Logo de facebook" class="sn-icone">
+                        </a>
                     </li>
                     <li class="sn-item">
-                        <a href="" class="sn-link">img.sn-icone</a>
+                        <a href="" class="sn-link">
+                            <img src="img/icons8-twitter.svg" alt="Logo de Twitter" class="sn-icone">
+                        </a>
                     </li>
                     <li class="sn-item">
-                        <a href="" class="sn-link">img.sn-icone</a>
+                        <a href="" class="sn-link">
+                            <img src="img/icons8-google-plus.svg" alt="Logo de Google Plus" class="sn-icone">
+                        </a>
                     </li>
                 </ul>
-            </adress>
+            </div>
         </div>
     </footer>
+    
 </body>
 
 
