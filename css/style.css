@@ -8,6 +8,7 @@
     src: local(''),
             url('../fonts/raleway-v19-latin-600.woff2') format('woff2'),
             url('../fonts/raleway-v19-latin-600.woff') format('woff');
+}
 
 @font-face {
     display: swap;
@@ -27,7 +28,8 @@
     src: local(''),
          url('../fonts/montserrat-v15-latin-regular.woff2') format('woff2'),
          url('../fonts/montserrat-v15-latin-regular.woff') format('woff');
-  
+}
+
 @font-face {
     display: swap;
     font-family: 'Montserrat';
@@ -36,7 +38,8 @@
     src: local(''),
          url('../fonts/montserrat-v15-latin-500.woff2') format('woff2'),
          url('../fonts/montserrat-v15-latin-500.woff') format('woff');
-  
+}
+
 @font-face {
     font-family: 'Montserrat';
     font-style: normal;
@@ -44,15 +47,16 @@
     src: local(''),
          url('../fonts/montserrat-v15-latin-600.woff2') format('woff2'),
          url('../fonts/montserrat-v15-latin-600.woff') format('woff');
-  
+}
+
 @font-face {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     src: local(''),
          url('../fonts/montserrat-v15-latin-700.woff2') format('woff2'),
-         url('../fonts/montserrat-v15-latin-700.woff') format('woff'); */
-
+         url('../fonts/montserrat-v15-latin-700.woff') format('woff');
+} */
 
 /* Couleurs */
 
@@ -105,12 +109,11 @@ p {
 }
 
 a {
-    font-family: 'Monserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
 }
 
 .logo-text {
-    font-family: 'Montserrat', sans-serif;
     line-height: 1.2em;
     color: var(--grey);
 }
@@ -164,28 +167,26 @@ a {
     color: var(--orange);
 }
 
-.stat-number {
-    font-family: 'Montserrat', sans-serif;
+p .stat-number {
     font-weight: 700;
     font-size: 6.4rem;
     line-height: 1.2em;
     color: var(--orange);
 }
 
-.stat-type {
-    font-family: 'Montserrat', sans-serif;
+p .stat-type {
     font-weight: 700;
     font-size: 2.4rem;
     line-height: 1.3em;
     color: var(--black)
 }
 
-.testimony-content > .section-title {
+.testimonial-content > .section-title {
     color: var(--white);
     margin-bottom: 0.5em;
 }
 
-.testimony-content > .section-text {
+.testimonial-content > .section-text {
     text-align: left;
     color: var(--greyLighter);
 }
@@ -250,7 +251,7 @@ main .container {
     z-index: -2;
 }
 
-.testimonies {
+.testimonials {
     background-image: url("../img/rect.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -276,6 +277,12 @@ main .container {
 
 .edging {
     margin-bottom: 3.2rem;
+}
+
+.edging span {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
 }
 
 .square {
@@ -319,7 +326,6 @@ hr {
 }
 
 .tag .link {
-    font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     line-height: 1em;
     color: var(--greyLight);
@@ -331,38 +337,45 @@ hr {
     background-color: var(--greyDarker);
 }
 
+.contact-item .link {
+    transform: translateY(-13%);
+}
+
+
 
 /* EFFECTS */
+*:focus {
+    outline: 5px solid var(--orange);
+}
 
-.link:hover,
-.link:focus {
+.testimonials .square:focus,
+.sn-item:focus {
+    outline: 5px solid var(--greyLighter);
+}
+
+.link:hover {
     background-color: var(--orange);
     color: var(--white);
     transition: .3s;
 }
 
 .sn-link:hover,
-.button-left-right:hover,
-.sn-link:focus,
-.button-left-right:focus {
+.button-left-right:hover {
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(319deg) brightness(107%) contrast(102%);
     transition: .3s;
 }
 
-.square:hover,
-.square:focus {
+.square:hover {
     background-color: var(--orange);
     transition: .3s;
 }
 
-.card-item:hover,
-.card-item:focus {
+.card-item:hover {
     box-shadow: inset .3rem .3rem .6rem var(--greyShadow);
     transition: .3s;
 }
 
-.testimonies .square:hover,
-.testimonies .square:focus {
+.testimonials .square:hover {
     background-color: var(--greyLighter);
     transition: .3s;
 }
@@ -528,7 +541,7 @@ hr {
 
 /* TESTIMONIES */
 
-.testimonies > .container {
+.testimonials > .container {
     gap: 12rem 5rem;
     grid-template-rows: repeat(2, auto);
 }
@@ -539,16 +552,16 @@ hr {
     align-content: center;
 }
 
-.testimony-img {
+.testimonial-img {
     border-radius: 50%;
     margin-right: 5.5rem;
 }
 
-.testimony-item {
+.testimonial-item {
     display: flex;
 }
 
-.testimony-content {
+.testimonial-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -601,4 +614,5 @@ hr {
 
 .sn-item {
     margin-left: 2.5rem;
+    border-radius: 50%;
 }
