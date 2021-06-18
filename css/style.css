@@ -1,7 +1,7 @@
 /* FONTES */
 
-/* @font-face {
-    display: swap;
+@font-face {
+    font-display: swap;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 600;
@@ -11,7 +11,7 @@
 }
 
 @font-face {
-    display: swap;
+    font-display: swap;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -21,7 +21,7 @@
 }
 
 @font-face {
-    display: swap;
+    font-display: swap;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -31,7 +31,7 @@
 }
 
 @font-face {
-    display: swap;
+    font-display: swap;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -41,6 +41,7 @@
 }
 
 @font-face {
+    font-display: swap;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -50,13 +51,14 @@
 }
 
 @font-face {
+    font-display: swap;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     src: local(''),
          url('../fonts/montserrat-v15-latin-700.woff2') format('woff2'),
          url('../fonts/montserrat-v15-latin-700.woff') format('woff');
-} */
+}
 
 /* Couleurs */
 
@@ -76,32 +78,31 @@
 
 
 /* TITLES & TEXT ELEMENTS */
-
-h1 {
+h1,
+h2,
+h3 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 6.4rem;
     line-height: 1.2em;
+}
+
+h1 {
+    font-size: 6.4rem;
     color: var(--orange);
 }
 
 h2 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
     font-size: 4.8rem;
-    line-height: 1.2em;
     color: var(--black);
 }
 
 h3 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
     font-size: 2.4rem;
-    line-height: 1.3em;
     color: var(--black);
 }
 
-p {
+p,
+a {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 1.6rem;
@@ -109,7 +110,6 @@ p {
 }
 
 a {
-    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
 }
 
@@ -119,11 +119,13 @@ a {
 }
 
 .logo-title {
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 2rem;
 }
 
 .logo-subtitle {
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 1.4rem;
 }
@@ -152,7 +154,7 @@ a {
     color: var(--black);
 }
 
-.fonctionalities .section-text {
+.features .section-text {
     color: var(--greyLighter);
 }
 
@@ -229,36 +231,6 @@ section {
 .site-hero > .container,
 main .container {
     justify-items: center;
-}
-
-.fonctionalities {
-    background-image: url("../img/bokehback.png"), 
-    url("../img/bokehback@2x.png");
-    background-color: var(--black);
-}
-
-.posts {
-    background-color: var(--white);
-}
-
-.statistics {
-    background-image: url("../img/lauren-mancke-aOC7TSLb1o8-unsplash.png"), 
-    url("../img/lauren-mancke-aOC7TSLb1o8-unsplash@2x.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    z-index: -2;
-}
-
-.testimonials {
-    background-image: url("../img/rect.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.site-footer {
-    background-color: var(--black);
 }
 
 
@@ -353,21 +325,38 @@ hr {
     outline: 5px solid var(--greyLighter);
 }
 
-.link:hover {
+.site-header .link:hover {
     background-color: var(--orange);
     color: var(--white);
     transition: .3s;
 }
 
-.sn-link:hover,
-.button-left-right:hover {
+.sn-link:hover {
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(319deg) brightness(107%) contrast(102%);
+    transition: .3s;
+}
+
+.button-left:hover {
+    transform: translateX(-50%);
+    transition: 0.3s;
+}
+
+.button-right:hover {
+    transform: translateX(50%);
     transition: .3s;
 }
 
 .square:hover {
     background-color: var(--orange);
     transition: .3s;
+}
+
+.square-orange:active {
+    background-color: var(--orange);
+}
+
+.square-grey:active {
+    background-color: var(--greyLight);
 }
 
 .card-item:hover {
@@ -378,6 +367,25 @@ hr {
 .testimonials .square:hover {
     background-color: var(--greyLighter);
     transition: .3s;
+}
+
+.menu-list .link:hover {
+    color: var(--greyLighter);
+    background-color: var(--black);
+    color: var(--orange);
+    transition: .3s;
+}
+
+.tag .link:hover {
+    transform: scale(1.2);
+    transition: .3s;
+    background-color: var(--orange);
+}
+
+.contact-text:hover {
+    background-color: var(--black);
+    transition : .3s;
+    color: var(--orange);
 }
 
 .overlay {
@@ -420,7 +428,7 @@ hr {
 }
 
 .menu-links .link {
-    padding: 1.5rem 2rem;
+    padding: 1.6rem 2rem;
 }
 
 
@@ -431,6 +439,12 @@ hr {
     background-image: url("../img/slider1.png");
     min-height: 96rem;
     padding-bottom: 8rem;
+}
+
+@media screen and (min-resolution: 144dpi){
+    .site-hero {
+        background-image: url("../img/slider1@2x.png");
+    }
 }
 
 .site-hero > .container {
@@ -480,9 +494,20 @@ hr {
 }
 
 
-/* FONCTIONALITIES */
+/* FEATURES */
 
-.fonctionalities > .container {
+.features {
+    background-image: url("../img/bokehback.png"); 
+    background-color: var(--black);
+}
+
+@media screen and (min-resolution: 144dpi) {
+    .features {
+        background-image: url("../img/bokehback@2x.png");
+    }
+}
+
+.features > .container {
     align-content: start;
     grid-template-rows: minmax(auto, auto) auto 1fr;
     min-height: 79rem;
@@ -497,6 +522,10 @@ hr {
 
 
 /* POSTS */
+
+.posts {
+    background-color: var(--white);
+}
 
 .cards-list {
     display: grid;
@@ -524,6 +553,21 @@ hr {
 
 /* STATISTICS */
 
+.statistics {
+    background-image: url("../img/lauren-mancke-aOC7TSLb1o8-unsplash.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: -2;
+}
+
+@media screen and (min-resolution: 144dpi) {
+    .statistics {
+        background-image: url("../img/lauren-mancke-aOC7TSLb1o8-unsplash@2x.png");
+    }
+}
+
 .stats-items {
     display: flex;
     justify-content: space-around;
@@ -540,6 +584,12 @@ hr {
 
 
 /* TESTIMONIES */
+
+.testimonials {
+    background-image: url("../img/rect.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .testimonials > .container {
     gap: 12rem 5rem;
@@ -569,6 +619,11 @@ hr {
 
 
 /* FOOTER */
+
+.site-footer {
+    background-color: var(--black);
+}
+
 
 .site-footer > .container {
     padding-top: 11rem;
