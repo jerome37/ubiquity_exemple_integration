@@ -224,7 +224,7 @@ section {
 
 .container {
     display: grid;
-    max-width: 128rem;
+    width: 128rem;
     margin: 0 auto;
 }
 
@@ -336,7 +336,7 @@ hr {
     transition: .3s;
 }
 
-.button-left:hover {
+/* .button-left:hover {
     transform: translateX(-50%);
     transition: 0.3s;
 }
@@ -344,7 +344,7 @@ hr {
 .button-right:hover {
     transform: translateX(50%);
     transition: .3s;
-}
+} */
 
 .square:hover {
     background-color: var(--orange);
@@ -435,10 +435,11 @@ hr {
 /* HERO */
 
 .site-hero {
-    display: grid;
+    /* display: grid; */
     background-image: url("../img/slider1.png");
-    min-height: 96rem;
+    height: 96rem;
     padding-bottom: 8rem;
+    padding-top: 0;
 }
 
 @media screen and (min-resolution: 144dpi){
@@ -608,6 +609,7 @@ hr {
 }
 
 .testimonial-item {
+    max-height: 22rem;
     display: flex;
 }
 
@@ -670,4 +672,101 @@ hr {
 .sn-item {
     margin-left: 2.5rem;
     border-radius: 50%;
+}
+
+
+/* ------------------------------------------------------------------------------ */
+
+/* SLIDER HERO */
+
+.swiper-container {
+    height: 96rem;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container {
+    position: absolute;
+    top: 0;
+    width: 128rem;
+    height: 100%;
+    transform: translateX(25%);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    width: 5rem;
+    height: 5rem;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after,
+.swiper-button-prev:after,
+.swiper-container-rtl .swiper-button-next:after,
+.swiper-button-next:after,
+.swiper-container-rtl .swiper-button-prev:after {
+  display: none;
+}
+
+.swiper-pagination {
+    margin-bottom: 8rem;
+}
+
+.swiper-pagination-bullet {
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    border-radius: 0;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: var(--orange);
+}
+
+/* SLIDER TESTIMONIALS */
+
+.testimonials {
+    padding: 0;
+}
+
+.testimonials .swiper-container {
+    padding-top: 17rem;
+    height: 60rem;
+}
+
+.testimonials .swiper-slide {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12rem;
+}
+
+.button-container {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    width: 128rem;
+    height: 100%;
+    transform: translateX(25%);
+}
+
+.swiper-pagination-bullet {
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    border-radius: 0;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: var(--white);
 }

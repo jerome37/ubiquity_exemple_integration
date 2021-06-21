@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/helper.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="swiper/swiper_bundle.css" />
     <link rel="stylesheet" href="css/style.css">
     <title>Ubiquity</title>
 </head>
@@ -56,14 +57,10 @@
         </div>
     </header>
 
-
     <section class="site-hero">
-        <div class="container">
-            <div class="hero-reader">
-                <button class="button-left-right">
-                    <img src="img/arrow-circle-left.svg" alt="left" class="button-left">
-                </button>
-                <div class="content-box">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('img/slider1.png')">
                     <h1 class="site-title">
                         At Ubiquity , We care
                     </h1>
@@ -71,20 +68,74 @@
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.
                     </p>
                 </div>
-                <button class="button-left-right">
+                <div class="swiper-slide" style="background-image: url('img/bokehback.png')">
+                    <h1 class="site-title">
+                        At Ubiquity , We love
+                    </h1>
+                    <p class="section-text hero-text">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.
+                    </p>
+                </div>
+                <div class="swiper-slide" style="background-image: url('img/lauren-mancke-aOC7TSLb1o8-unsplash.png'); background-size: cover">
+                    <h1 class="site-title">
+                        At Ubiquity , We feel
+                    </h1>
+                    <p class="section-text hero-text">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.
+                    </p>
+                </div>
+                <div class="swiper-slide" style="background-image: url('img/slider1.png')">
+                    <h1 class="site-title">
+                        At Ubiquity , We care
+                    </h1>
+                    <p class="section-text hero-text">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.
+                    </p>
+                </div>
+                <div class="swiper-slide" style="background-image: url('img/bokehback.png')">
+                    <h1 class="site-title">
+                        At Ubiquity , We love
+                    </h1>
+                    <p class="section-text hero-text">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.
+                    </p>
+                </div>
+                <div class="swiper-slide" style="background-image: url('img/lauren-mancke-aOC7TSLb1o8-unsplash.png'); background-size: cover">
+                    <h1 class="site-title">
+                        At Ubiquity , We feel
+                    </h1>
+                    <p class="section-text hero-text">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.
+                    </p>
+                </div>
+                <div class="swiper-slide" style="background-image: url('img/slider1.png')">
+                    <h1 class="site-title">
+                        At Ubiquity , We care
+                    </h1>
+                    <p class="section-text hero-text">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.
+                    </p>
+                </div>
+                <div class="swiper-slide" style="background-image: url('img/bokehback.png')">
+                    <h1 class="site-title">
+                        At Ubiquity , We love
+                    </h1>
+                    <p class="section-text hero-text">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.
+                    </p>
+                </div>
+            </div>
+
+            <div class="button-container">
+                <div class="swiper-button-prev">
+                    <img src="img/arrow-circle-left.svg" alt="left" class="button-left">
+                </div>
+                <div class="swiper-button-next">
                     <img src="img/arrow-circle-left-1.svg" alt="right" class="button-right">
-                </button>
+                </div>
             </div>
-            <div class="eight-buttons">
-                <button class="square"></button>
-                <button class="square square-orange"></button>
-                <button class="square"></button>
-                <button class="square"></button>
-                <button class="square"></button>
-                <button class="square"></button>
-                <button class="square"></button>
-                <button class="square"></button>
-            </div>
+
+            <div class="swiper-pagination"></div>
         </div>
     </section>
     
@@ -319,32 +370,64 @@
             </div>
         </section>
 
-        <section class="testimonials">
-            <div class="container">
-                <article class="testimonial-item">
-                    <figure class="portrait-box">
-                        <img src="img/Image 1.png" srcset="mg/Image 1@2x.png" alt="Photo d'une femme travaillant sur un ordinateur portable" class="testimonial-img">
-                    </figure>
-                    <div class="testimonial-content">
-                        <h2 class="section-title">
-                            Amanda Sigfried
-                        </h2>
-                        <p class="section-text">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren
-                        </p>
-                    </div>
-                </article>
+    <!-- <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+            </div>
 
-                <div class="eight-buttons">
-                    <button class="square"></button>
-                    <button class="square square-grey"></button>
-                    <button class="square"></button>
-                    <button class="square"></button>
-                    <button class="square"></button>
-                    <button class="square"></button>
-                    <button class="square"></button>
-                    <button class="square"></button>
+            <div class="swiper-pagination"></div>
+            
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div> -->
+
+        <section class="testimonials">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <article class="testimonial-item swiper-slide">
+                        <figure class="portrait-box">
+                            <img src="img/Image 1.png" srcset="mg/Image 1@2x.png" alt="Photo d'une femme travaillant sur un ordinateur portable" class="testimonial-img">
+                        </figure>
+                        <div class="testimonial-content">
+                            <h2 class="section-title">
+                                Amanda Sigfried
+                            </h2>
+                            <p class="section-text">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren
+                            </p>
+                        </div>
+                    </article>
+                    <article class="testimonial-item swiper-slide">
+                        <figure class="portrait-box">
+                            <img src="img/Image 1.png" srcset="mg/Image 1@2x.png" alt="Photo d'une femme travaillant sur un ordinateur portable" class="testimonial-img">
+                        </figure>
+                        <div class="testimonial-content">
+                            <h2 class="section-title">
+                                Sarah Wolgang
+                            </h2>
+                            <p class="section-text">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren
+                            </p>
+                        </div>
+                    </article>
+                    <article class="testimonial-item swiper-slide">
+                        <figure class="portrait-box">
+                            <img src="img/Image 1.png" srcset="mg/Image 1@2x.png" alt="Photo d'une femme travaillant sur un ordinateur portable" class="testimonial-img">
+                        </figure>
+                        <div class="testimonial-content">
+                            <h2 class="section-title">
+                                Emily Wunderbach
+                            </h2>
+                            <p class="section-text">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren
+                            </p>
+                        </div>
+                    </article>
                 </div>
+
+                <div class="swiper-pagination"></div>
             </div>
         </section>
     </main>
@@ -496,6 +579,28 @@
             </div>
         </div>
     </footer>
+
+    <script src="swiper/swiper_bundle.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+      
 
 </body>
 
